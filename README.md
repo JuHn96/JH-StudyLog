@@ -1,4 +1,4 @@
 # JH-StudyLog
 25.09.08 Assignment submission
 
-https://www.templatemonster.com/website-templates/gravity-multi-purpose-html-template-195940.html
+From - https://www.templatemonster.com/website-templates/gravity-multi-purpose-html-template-195940.html
