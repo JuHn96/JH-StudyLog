@@ -1,144 +1,389 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!--호환성을 위해 쓰이던 코드, 현재는 없어도 무방 <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!--반응형 웹 디자인 관련 코드-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--반응형 웹 디자인 관련 코드-->
     <title>JuHn's Space-test</title>
-    
-    <meta property="og:title" content="JuHn's Space" /><!--공유시 미리보기 표시 텍스트-->
+
+    <meta property="og:title" content="JuHn's Space" />
+    <!--공유시 미리보기 표시 텍스트-->
     <meta name="twitter:title" content="JuHn's Space" />
-    <meta name="og:image:alt" content="JuHn's Space" /><!-- 공유 이미지 대체 텍스트-->
+    <meta name="og:image:alt" content="JuHn's Space" />
+    <!-- 공유 이미지 대체 텍스트-->
     <!-- <meta name="robots" content="noindex,nofollow">검색엔진 크롤러에게 페이지 색인 및 링크 추적 정책을 지시하는 메타 태그 -->
     <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" sizes="180x180"> 모바일기기 홈화면 아이콘-->
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"><!--브라우저탭,즐겨찾기등에서 표시되는 파비콘-->
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"><!--해상도가 작은 브라우저 탭이나 즐겨찾기용-->
-   
-    <!-- <link rel="shortcut icon" href="/favicon.ico">예전 IE 브라우저에서 주로 사용 -->
-    <link rel="manifest" href="/site.webmanifest"><!--PWA 웹앱 설정(이 태그로 '이 사이트는 앱처럼 설치할 수 있는 웹사이트'임을 알게됨)-->
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><!--safari 탭 고정 아이콘-->
-    <meta http-equiv="x-dns-prefetch-control" content="on"><!--DNS 사전 조회(prefetch) 활성화/실제 리소스를 요청할 때 속도를 조금 더 빠르게 해줌-->
-   
-    <!-- Microsoft 관련 태그 -->
-    <meta name="msapplication-TileColor" content="#da532c"><!--타일색상지정-->
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png"><!--타일아이콘지정-->
-    <meta name="msapplication-config" content="/browserconfig.xml"><!--브라우저/OS용 설정 XML 경로 지정-->
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <!--브라우저탭,즐겨찾기등에서 표시되는 파비콘-->
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <!--해상도가 작은 브라우저 탭이나 즐겨찾기용-->
 
-    <meta name="pinterest-logo" content="https://s3sf.tmimgcdn.com/pinterest-logo.png"><!--Pinterest대표로고-->
-    <meta name="theme-color" content="#2196f3"><!--브라우저테마색상-->
-    
+    <!-- <link rel="shortcut icon" href="/favicon.ico">예전 IE 브라우저에서 주로 사용 -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--PWA 웹앱 설정(이 태그로 '이 사이트는 앱처럼 설치할 수 있는 웹사이트'임을 알게됨)-->
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <!--safari 탭 고정 아이콘-->
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <!--DNS 사전 조회(prefetch) 활성화/실제 리소스를 요청할 때 속도를 조금 더 빠르게 해줌-->
+
+    <!-- Microsoft 관련 태그 -->
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <!--타일색상지정-->
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <!--타일아이콘지정-->
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <!--브라우저/OS용 설정 XML 경로 지정-->
+
+    <meta
+      name="pinterest-logo"
+      content="https://s3sf.tmimgcdn.com/pinterest-logo.png"
+    />
+    <!--Pinterest대표로고-->
+    <meta name="theme-color" content="#2196f3" />
+    <!--브라우저테마색상-->
+
     <!-- OG/twitter카드 관련 -->
     <meta property="og:site_name" content="TemplateMonster" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@templatemonster" />
     <meta name="twitter:creator" content="@templatemonster" />
     <meta property="og:type" content="page" />
-    <meta name="description" content="JuHn's Space"><!--검색엔진 최적화용 기본 페이지 설명-->
+    <meta name="description" content="JuHn's Space" />
+    <!--검색엔진 최적화용 기본 페이지 설명-->
     <!--SNS 공유 시 보이는 설정-->
-    <meta property="og:description" content="JuHn's Space"><!--페이스북,카톡-->
-    <meta property="twitter:description" content="@templatemonster JuHn's Space"><!--트위터(X)-->
-   
+    <meta property="og:description" content="JuHn's Space" />
+    <!--페이스북,카톡-->
+    <meta
+      property="twitter:description"
+      content="@templatemonster JuHn's Space"
+    />
+    <!--트위터(X)-->
+
     <!-- 웹 메인 이미지 -->
-    <meta property="og:image"
-        content="https://s.tmimgcdn.com/scr/1200x627/195900/gravity-multi-purpose-html-template_195940-original.jpg"><!--대표공유이미지-->
-    <meta property="twitter:image"
-        content="https://s.tmimgcdn.com/scr/1200x627/195900/gravity-multi-purpose-html-template_195940-original.jpg"><!--트위터(X)공유할때-->
-    <link property="image_src"
-        href="https://s.tmimgcdn.com/scr/1200x627/195900/gravity-multi-purpose-html-template_195940-original.jpg"><!--예전대표이미지이지만 현재 호환성을 위해 기입-->
-    
+    <meta
+      property="og:image"
+      content="https://s.tmimgcdn.com/scr/1200x627/195900/gravity-multi-purpose-html-template_195940-original.jpg"
+    />
+    <!--대표공유이미지-->
+    <meta
+      property="twitter:image"
+      content="https://s.tmimgcdn.com/scr/1200x627/195900/gravity-multi-purpose-html-template_195940-original.jpg"
+    />
+    <!--트위터(X)공유할때-->
+    <link
+      property="image_src"
+      href="https://s.tmimgcdn.com/scr/1200x627/195900/gravity-multi-purpose-html-template_195940-original.jpg"
+    />
+    <!--예전대표이미지이지만 현재 호환성을 위해 기입-->
+
     <!--OG 이미지의 권장 가로,세로 픽셀 크기-->
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="627">
-    
-    <meta property="fb:app_id" content="128293383907353" /><!--페이스북에서 앱을 통해 링크 통계를 추적할 수 있도록 연결-->
-    
-    <link rel="stylesheet" href="css/style.css"><!--CSS파일 연결 명령어-->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
 
-    <script src="js/script.js"></script><!--js파일 연결 명령어-->
-    <script src='https://account.templatemonster.com/cp/default.js' async type="text/javascript"></script><!--외부 js파일 연결-->
-    <link href="https://www.templatemonster.com/assets/css/demo-5ebb806c1c567b2a5001.css" rel="preload" as="style">
-    <link href="//www.templatemonster.com/assets/css/demo-5ebb806c1c567b2a5001.css" rel="stylesheet">
-</head>
+    <meta property="fb:app_id" content="128293383907353" />
+    <!--페이스북에서 앱을 통해 링크 통계를 추적할 수 있도록 연결-->
 
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--CSS파일 연결 명령어-->
+
+    <script src="js/script.js"></script>
+    <!--js파일 연결 명령어-->
+    <!-- <script src='https://account.templatemonster.com/cp/default.js' async type="text/javascript"></script>외부 js파일 연결 -->
+    <script src="js/default.js"></script><!--위의 외부 js를 가지고와서 로컬로 대체-->
+    <link
+      href="https://www.templatemonster.com/assets/css/demo-5ebb806c1c567b2a5001.css"
+      rel="preload"
+      as="style"
+    />
+    <link
+      href="//www.templatemonster.com/assets/css/demo-5ebb806c1c567b2a5001.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS2BNB" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MS2BNB"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="wrap">
-        <header class="header" id="frame-panel">
-            <a href="https://www.templatemonster.com/website-templates/gravity-multi-purpose-html-template-195940.html"
-                class="back-to-product">
-                <span class="back-to-product-icon"></span>
-                Gravity - Multi-Purpose HTML Template </a>
-            <div class="devices devices-static" id="devices"
-                data-translations="{&quot;desktop&quot;:&quot;Desktop&quot;,&quot;tablet&quot;:&quot;Tablet&quot;,&quot;smartphone&quot;:&quot;Mobile&quot;}">
-            </div>
-            <div class="header-buttons">
-                <div class="add-to-cart" id="add-to-cart"
-                    data-translations="{&quot;label&quot;:&quot;Buy Now&quot;,&quot;modalLabel&quot;:&quot;Add to Cart&quot;,&quot;download&quot;:&quot;Download&quot;,&quot;servicesTitle&quot;:&quot;Recommended services available for this item&quot;,&quot;freeTitle&quot;:&quot;Free Product&quot;}"
-                    data-product-id="195940" data-product-title="Gravity - Multi-Purpose HTML Template"
-                    data-type-id="50108"
-                    data-licenses="[{&quot;type&quot;:&quot;regular&quot;,&quot;modifier&quot;:{&quot;type&quot;:&quot;amount&quot;,&quot;value&quot;:0,&quot;operation&quot;:&quot;addition&quot;},&quot;id&quot;:46,&quot;items&quot;:[],&quot;isDefault&quot;:1,&quot;translates&quot;:{&quot;title&quot;:&quot;Personal license&quot;,&quot;description&quot;:&quot;This license can be used only for one personal website. With this license, you can&#039;t resell or redistribute the template or the end product based on it&quot;},&quot;prices&quot;:{&quot;regular&quot;:41,&quot;regularLabel&quot;:&quot;$41&quot;,&quot;discount&quot;:41,&quot;discountLabel&quot;:&quot;$41&quot;},&quot;gee&quot;:{&quot;variant&quot;:&quot;regular + 46&quot;}},{&quot;type&quot;:&quot;commercial&quot;,&quot;modifier&quot;:{&quot;type&quot;:&quot;percent&quot;,&quot;value&quot;:30,&quot;operation&quot;:&quot;addition&quot;},&quot;id&quot;:47,&quot;items&quot;:[],&quot;isDefault&quot;:0,&quot;translates&quot;:{&quot;title&quot;:&quot;Commercial license&quot;,&quot;description&quot;:&quot;With this license, you and your clients can create up to five different websites. The license allows you to transfer or resell the end products (websites based on this template)&quot;},&quot;prices&quot;:{&quot;regular&quot;:53,&quot;regularLabel&quot;:&quot;$53&quot;,&quot;discount&quot;:53,&quot;discountLabel&quot;:&quot;$53&quot;},&quot;gee&quot;:{&quot;variant&quot;:&quot;regular + 47&quot;}}]"
-                    data-services="[{&quot;id&quot;:772,&quot;translates&quot;:{&quot;title&quot;:&quot;Must-Have Launch Pack&quot;},&quot;prices&quot;:{&quot;regular&quot;:89,&quot;regularLabel&quot;:&quot;$89&quot;,&quot;discount&quot;:49,&quot;discountLabel&quot;:&quot;$49&quot;},&quot;gee&quot;:{&quot;item_id&quot;:&quot;772&quot;,&quot;item_name&quot;:&quot;Offer&quot;,&quot;affiliation&quot;:&quot;TT&quot;,&quot;discount&quot;:0.4,&quot;item_brand&quot;:&quot;Must-Have Launch Pack&quot;,&quot;item_category&quot;:&quot;TT: Website Templates: Must-Have Pack&quot;,&quot;item_category2&quot;:&quot;channel - tm2-preview&quot;,&quot;item_category3&quot;:&quot;ontemplate&quot;,&quot;item_variant&quot;:&quot;premium&quot;,&quot;price&quot;:0.49,&quot;quantity&quot;:1,&quot;item_list_name&quot;:&quot;Demo&quot;,&quot;index&quot;:1}},{&quot;id&quot;:370,&quot;translates&quot;:{&quot;title&quot;:&quot;Conversion to WordPress with Page Builder&quot;},&quot;prices&quot;:{&quot;regular&quot;:399,&quot;regularLabel&quot;:&quot;$399&quot;,&quot;discount&quot;:369,&quot;discountLabel&quot;:&quot;$369&quot;},&quot;gee&quot;:{&quot;item_id&quot;:&quot;370&quot;,&quot;item_name&quot;:&quot;Offer&quot;,&quot;affiliation&quot;:&quot;TT&quot;,&quot;discount&quot;:0.3,&quot;item_brand&quot;:&quot;Conversion to WordPress with Page Builder&quot;,&quot;item_category&quot;:&quot;TT: Converting to WordPress&quot;,&quot;item_category2&quot;:&quot;channel - tm2-preview&quot;,&quot;item_category3&quot;:&quot;ontemplate&quot;,&quot;item_variant&quot;:&quot;premium&quot;,&quot;price&quot;:3.69,&quot;quantity&quot;:1,&quot;item_list_name&quot;:&quot;Demo&quot;,&quot;index&quot;:2}},{&quot;id&quot;:888,&quot;translates&quot;:{&quot;title&quot;:&quot;Installation &amp; Customization Package&quot;},&quot;prices&quot;:{&quot;regular&quot;:319,&quot;regularLabel&quot;:&quot;$319&quot;,&quot;discount&quot;:199,&quot;discountLabel&quot;:&quot;$199&quot;},&quot;gee&quot;:{&quot;item_id&quot;:&quot;888&quot;,&quot;item_name&quot;:&quot;Offer&quot;,&quot;affiliation&quot;:&quot;TT&quot;,&quot;discount&quot;:1.2,&quot;item_brand&quot;:&quot;Installation &amp; Customization Package&quot;,&quot;item_category&quot;:&quot;TT: Website Templates: Installation &amp; Customization Package (renamed)&quot;,&quot;item_category2&quot;:&quot;channel - tm2-preview&quot;,&quot;item_category3&quot;:&quot;ontemplate&quot;,&quot;item_variant&quot;:&quot;premium&quot;,&quot;price&quot;:1.99,&quot;quantity&quot;:1,&quot;item_list_name&quot;:&quot;Demo&quot;,&quot;index&quot;:3}},{&quot;id&quot;:1517,&quot;translates&quot;:{&quot;title&quot;:&quot;All-in-One Website&quot;},&quot;prices&quot;:{&quot;regular&quot;:899,&quot;regularLabel&quot;:&quot;$899&quot;,&quot;discount&quot;:699,&quot;discountLabel&quot;:&quot;$699&quot;},&quot;gee&quot;:{&quot;item_id&quot;:&quot;1517&quot;,&quot;item_name&quot;:&quot;Offer&quot;,&quot;affiliation&quot;:&quot;TT&quot;,&quot;discount&quot;:2,&quot;item_brand&quot;:&quot;All-in-One Website&quot;,&quot;item_category&quot;:&quot;TT: All-in-One Website (HTML) (0.42 - moto; 0.58 - tt)&quot;,&quot;item_category2&quot;:&quot;channel - tm2-preview&quot;,&quot;item_category3&quot;:&quot;ontemplate&quot;,&quot;item_variant&quot;:&quot;premium&quot;,&quot;price&quot;:6.99,&quot;quantity&quot;:1,&quot;item_list_name&quot;:&quot;Demo&quot;,&quot;index&quot;:4}},{&quot;id&quot;:1025,&quot;translates&quot;:{&quot;title&quot;:&quot;On-Page SEO Optimization&quot;},&quot;prices&quot;:{&quot;regular&quot;:329,&quot;regularLabel&quot;:&quot;$329&quot;,&quot;discount&quot;:299,&quot;discountLabel&quot;:&quot;$299&quot;},&quot;gee&quot;:{&quot;item_id&quot;:&quot;1025&quot;,&quot;item_name&quot;:&quot;Offer&quot;,&quot;affiliation&quot;:&quot;TT&quot;,&quot;discount&quot;:0.3,&quot;item_brand&quot;:&quot;On-Page SEO Optimization&quot;,&quot;item_category&quot;:&quot;TT: All types: Extended On-Page SEO Optimization&quot;,&quot;item_category2&quot;:&quot;channel - tm2-preview&quot;,&quot;item_category3&quot;:&quot;ontemplate&quot;,&quot;item_variant&quot;:&quot;premium&quot;,&quot;price&quot;:2.99,&quot;quantity&quot;:1,&quot;item_list_name&quot;:&quot;Demo&quot;,&quot;index&quot;:5}}]"
-                    data-paid-supports="{&quot;isIncludeBasicSupport&quot;:true,&quot;items&quot;:[{&quot;id&quot;:127195,&quot;translates&quot;:{&quot;title&quot;:&quot;Get 6 more months of support and save $20&quot;,&quot;description&quot;:&quot;With a product you will get 6 months of support from the author. To know more about what is included, please read the &lt;a href=\&quot;https:\/\/www.templatemonster.com\/support-policy\/\&quot; target=\&quot;_blank\&quot;&gt;support policy&lt;\/a&gt;.&quot;},&quot;prices&quot;:{&quot;regular&quot;:41,&quot;regularLabel&quot;:&quot;$41&quot;,&quot;discount&quot;:21,&quot;discountLabel&quot;:&quot;$21&quot;},&quot;gee&quot;:{&quot;item_id&quot;:&quot;127195&quot;,&quot;item_name&quot;:&quot;Paid support&quot;,&quot;affiliation&quot;:&quot;TM&quot;,&quot;discount&quot;:0.2,&quot;item_variant&quot;:&quot;premium&quot;,&quot;price&quot;:0.21,&quot;quantity&quot;:1}}]}"
-                    data-free="{&quot;enable&quot;:false}" data-is-state-sale="true"
-                    data-is-default-paid-support-on="true"
-                    data-product-gee="{&quot;item_id&quot;:&quot;195940&quot;,&quot;item_name&quot;:&quot;1&quot;,&quot;affiliation&quot;:&quot;GWorld&quot;,&quot;discount&quot;:0,&quot;item_brand&quot;:&quot;Website templates&quot;,&quot;item_category&quot;:&quot;Website&quot;,&quot;item_category2&quot;:&quot;in_one - true&quot;,&quot;item_category3&quot;:&quot;updated - false&quot;,&quot;item_category4&quot;:&quot;booster - 125&quot;,&quot;item_variant&quot;:&quot;premium + 46&quot;,&quot;price&quot;:0.41,&quot;quantity&quot;:1,&quot;item_list_name&quot;:&quot;&quot;,&quot;index&quot;:1}"
-                    data-is-media-product="false"
-                    data-types="{&quot;HTML_ID&quot;:50108,&quot;WORDPRESS_ID&quot;:50125,&quot;JOOMLA_ID&quot;:50126,&quot;OPENCART_ID&quot;:50122,&quot;WOOCOMMERCE_ID&quot;:61529,&quot;SHOPIFY_ID&quot;:67280,&quot;LOGO_TEMPLATES_ID&quot;:50133,&quot;LANDING_PAGE_ID&quot;:168633,&quot;NEWSLETTER_ID&quot;:109856,&quot;ADMIN_TEMPLATES_ID&quot;:207799,&quot;BIGCOMMERCE_ID&quot;:845761,&quot;PRESTASHOP_ID&quot;:50116,&quot;MOTO_CMS3_ID&quot;:168158,&quot;MOTOCMS_ECOMMERCE_ID&quot;:208727,&quot;DRUPAL_ID&quot;:50127}">
-                </div>
-                <a href="https://www.templatemonster.com/monsterone/tm-membership/?id=195940" target="" rel="nofollow"
-                    class="header-btn header-btn_membership">
-                    <img class="header-btn-icon inline-svg" data-src="/assets/icons/monsterEye.svg" alt="monsterEye" />
-                    Get Unlimited Downloads </a>
+      <header class="header" id="frame-panel">
+        <a
+          href="https://www.templatemonster.com/website-templates/gravity-multi-purpose-html-template-195940.html"
+          class="back-to-product"
+        >
+          <span class="back-to-product-icon"></span>
+          Gravity - Multi-Purpose HTML Template
+        </a>
+        <div
+          class="devices devices-static"
+          id="devices"
+          data-translations='{"desktop":"Desktop","tablet":"Tablet","smartphone":"Mobile"}'
+        ></div>
+        <div class="header-buttons">
+          <div
+            class="add-to-cart"
+            id="add-to-cart"
+            data-translations='{"label":"Buy Now","modalLabel":"Add to Cart","download":"Download","servicesTitle":"Recommended services available for this item","freeTitle":"Free Product"}'
+            data-product-id="195940"
+            data-product-title="Gravity - Multi-Purpose HTML Template"
+            data-type-id="50108"
+            data-licenses='[{"type":"regular","modifier":{"type":"amount","value":0,"operation":"addition"},"id":46,"items":[],"isDefault":1,"translates":{"title":"Personal license","description":"This license can be used only for one personal website. With this license, you can&#039;t resell or redistribute the template or the end product based on it"},"prices":{"regular":41,"regularLabel":"$41","discount":41,"discountLabel":"$41"},"gee":{"variant":"regular + 46"}},{"type":"commercial","modifier":{"type":"percent","value":30,"operation":"addition"},"id":47,"items":[],"isDefault":0,"translates":{"title":"Commercial license","description":"With this license, you and your clients can create up to five different websites. The license allows you to transfer or resell the end products (websites based on this template)"},"prices":{"regular":53,"regularLabel":"$53","discount":53,"discountLabel":"$53"},"gee":{"variant":"regular + 47"}}]'
+            data-services='[{"id":772,"translates":{"title":"Must-Have Launch Pack"},"prices":{"regular":89,"regularLabel":"$89","discount":49,"discountLabel":"$49"},"gee":{"item_id":"772","item_name":"Offer","affiliation":"TT","discount":0.4,"item_brand":"Must-Have Launch Pack","item_category":"TT: Website Templates: Must-Have Pack","item_category2":"channel - tm2-preview","item_category3":"ontemplate","item_variant":"premium","price":0.49,"quantity":1,"item_list_name":"Demo","index":1}},{"id":370,"translates":{"title":"Conversion to WordPress with Page Builder"},"prices":{"regular":399,"regularLabel":"$399","discount":369,"discountLabel":"$369"},"gee":{"item_id":"370","item_name":"Offer","affiliation":"TT","discount":0.3,"item_brand":"Conversion to WordPress with Page Builder","item_category":"TT: Converting to WordPress","item_category2":"channel - tm2-preview","item_category3":"ontemplate","item_variant":"premium","price":3.69,"quantity":1,"item_list_name":"Demo","index":2}},{"id":888,"translates":{"title":"Installation &amp; Customization Package"},"prices":{"regular":319,"regularLabel":"$319","discount":199,"discountLabel":"$199"},"gee":{"item_id":"888","item_name":"Offer","affiliation":"TT","discount":1.2,"item_brand":"Installation &amp; Customization Package","item_category":"TT: Website Templates: Installation &amp; Customization Package (renamed)","item_category2":"channel - tm2-preview","item_category3":"ontemplate","item_variant":"premium","price":1.99,"quantity":1,"item_list_name":"Demo","index":3}},{"id":1517,"translates":{"title":"All-in-One Website"},"prices":{"regular":899,"regularLabel":"$899","discount":699,"discountLabel":"$699"},"gee":{"item_id":"1517","item_name":"Offer","affiliation":"TT","discount":2,"item_brand":"All-in-One Website","item_category":"TT: All-in-One Website (HTML) (0.42 - moto; 0.58 - tt)","item_category2":"channel - tm2-preview","item_category3":"ontemplate","item_variant":"premium","price":6.99,"quantity":1,"item_list_name":"Demo","index":4}},{"id":1025,"translates":{"title":"On-Page SEO Optimization"},"prices":{"regular":329,"regularLabel":"$329","discount":299,"discountLabel":"$299"},"gee":{"item_id":"1025","item_name":"Offer","affiliation":"TT","discount":0.3,"item_brand":"On-Page SEO Optimization","item_category":"TT: All types: Extended On-Page SEO Optimization","item_category2":"channel - tm2-preview","item_category3":"ontemplate","item_variant":"premium","price":2.99,"quantity":1,"item_list_name":"Demo","index":5}}]'
+            data-paid-supports='{"isIncludeBasicSupport":true,"items":[{"id":127195,"translates":{"title":"Get 6 more months of support and save $20","description":"With a product you will get 6 months of support from the author. To know more about what is included, please read the &lt;a href=\"https:\/\/www.templatemonster.com\/support-policy\/\" target=\"_blank\"&gt;support policy&lt;\/a&gt;."},"prices":{"regular":41,"regularLabel":"$41","discount":21,"discountLabel":"$21"},"gee":{"item_id":"127195","item_name":"Paid support","affiliation":"TM","discount":0.2,"item_variant":"premium","price":0.21,"quantity":1}}]}'
+            data-free='{"enable":false}'
+            data-is-state-sale="true"
+            data-is-default-paid-support-on="true"
+            data-product-gee='{"item_id":"195940","item_name":"1","affiliation":"GWorld","discount":0,"item_brand":"Website templates","item_category":"Website","item_category2":"in_one - true","item_category3":"updated - false","item_category4":"booster - 125","item_variant":"premium + 46","price":0.41,"quantity":1,"item_list_name":"","index":1}'
+            data-is-media-product="false"
+            data-types='{"HTML_ID":50108,"WORDPRESS_ID":50125,"JOOMLA_ID":50126,"OPENCART_ID":50122,"WOOCOMMERCE_ID":61529,"SHOPIFY_ID":67280,"LOGO_TEMPLATES_ID":50133,"LANDING_PAGE_ID":168633,"NEWSLETTER_ID":109856,"ADMIN_TEMPLATES_ID":207799,"BIGCOMMERCE_ID":845761,"PRESTASHOP_ID":50116,"MOTO_CMS3_ID":168158,"MOTOCMS_ECOMMERCE_ID":208727,"DRUPAL_ID":50127}'
+          ></div>
+          <a
+            href="https://www.templatemonster.com/monsterone/tm-membership/?id=195940"
+            target=""
+            rel="nofollow"
+            class="header-btn header-btn_membership"
+          >
+            <img
+              class="header-btn-icon inline-svg"
+              data-src="/assets/icons/monsterEye.svg"
+              alt="monsterEye"
+            />
+            Get Unlimited Downloads
+          </a>
 
-                <div id="cart" class="header-button header_cart-demo cart-button"
-                    data-cart-translations="{&quot;cartTitle&quot;:&quot;Shopping Cart&quot;,&quot;titleServices&quot;:&quot;Recommended Customization Services for This Product&quot;,&quot;servicesDetailsLabel&quot;:&quot;Details&quot;,&quot;labelBack&quot;:&quot;Back to All Services&quot;,&quot;cartTop&quot;:&quot;You added to cart&quot;,&quot;continueLabel&quot;:&quot;Continue Shopping&quot;,&quot;licenseCaption&quot;:&quot;License type&quot;,&quot;priceCaption&quot;:&quot;Total&quot;,&quot;singlePriceCaption&quot;:&quot;Subtotal&quot;,&quot;viewCartLabel&quot;:&quot;Go To Cart&quot;,&quot;priceButtonLabel&quot;:&quot;Checkout Now&quot;,&quot;freeLabel&quot;:&quot;Free&quot;,&quot;feeCaption&quot;:&quot;Handling fee&quot;,&quot;labelCusomersChoice&quot;:&quot;Customers&#039; #1 choice&quot;,&quot;labelRecommended&quot;:&quot;Recommended&quot;}"
-                    aria-label="Cart" title="Cart">
-                    <i class="header-button-icon header-button-icon_cart" data-name="cartBold" data-plasma-icon></i>
-                </div>
+          <div
+            id="cart"
+            class="header-button header_cart-demo cart-button"
+            data-cart-translations='{"cartTitle":"Shopping Cart","titleServices":"Recommended Customization Services for This Product","servicesDetailsLabel":"Details","labelBack":"Back to All Services","cartTop":"You added to cart","continueLabel":"Continue Shopping","licenseCaption":"License type","priceCaption":"Total","singlePriceCaption":"Subtotal","viewCartLabel":"Go To Cart","priceButtonLabel":"Checkout Now","freeLabel":"Free","feeCaption":"Handling fee","labelCusomersChoice":"Customers&#039; #1 choice","labelRecommended":"Recommended"}'
+            aria-label="Cart"
+            title="Cart"
+          >
+            <i
+              class="header-button-icon header-button-icon_cart"
+              data-name="cartBold"
+              data-plasma-icon
+            ></i>
+          </div>
 
-                <div class="frame-toggler" id="frame-toggler"
-                    data-translations="{&quot;label&quot;:&quot;Hide Panel&quot;}"></div>
-            </div>
-            <div class="product-cart-modal-wrapper" id="product-cart-modal" data-type-id="50108"
-                data-product-type-name="1"
-                data-translations="{&quot;cartTitle&quot;:&quot;Shopping Cart&quot;,&quot;titleServices&quot;:&quot;Recommended Customization Services for This Product&quot;,&quot;servicesDetailsLabel&quot;:&quot;Details&quot;,&quot;labelBack&quot;:&quot;Back to All Services&quot;,&quot;cartTop&quot;:&quot;You added to cart&quot;,&quot;continueLabel&quot;:&quot;Continue Shopping&quot;,&quot;licenseCaption&quot;:&quot;License type&quot;,&quot;priceCaption&quot;:&quot;Total&quot;,&quot;singlePriceCaption&quot;:&quot;Subtotal&quot;,&quot;viewCartLabel&quot;:&quot;Go To Cart&quot;,&quot;priceButtonLabel&quot;:&quot;Checkout Now&quot;,&quot;freeLabel&quot;:&quot;Free&quot;,&quot;feeCaption&quot;:&quot;Handling fee&quot;,&quot;labelCusomersChoice&quot;:&quot;Customers&#039; #1 choice&quot;,&quot;labelRecommended&quot;:&quot;Recommended&quot;}"
-                data-list-name="Demo"
-                data-types="{&quot;HTML_ID&quot;:50108,&quot;WORDPRESS_ID&quot;:50125,&quot;JOOMLA_ID&quot;:50126,&quot;OPENCART_ID&quot;:50122,&quot;WOOCOMMERCE_ID&quot;:61529,&quot;SHOPIFY_ID&quot;:67280,&quot;LOGO_TEMPLATES_ID&quot;:50133,&quot;LANDING_PAGE_ID&quot;:168633,&quot;NEWSLETTER_ID&quot;:109856,&quot;ADMIN_TEMPLATES_ID&quot;:207799,&quot;BIGCOMMERCE_ID&quot;:845761,&quot;PRESTASHOP_ID&quot;:50116,&quot;MOTO_CMS3_ID&quot;:168158,&quot;MOTOCMS_ECOMMERCE_ID&quot;:208727,&quot;DRUPAL_ID&quot;:50127}">
-            </div>
-        </header>
-        <section class="content">
-            <div class="frame-wrapper" id="frame-wrapper">
-                <iframe class="frame" src="https://g-source.xyz/templates/gravity/" width="100%" height="400px"
-                    title="Preview Template"
-                    sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-popups"></iframe>
-            </div>
-        </section>
+          <div
+            class="frame-toggler"
+            id="frame-toggler"
+            data-translations='{"label":"Hide Panel"}'
+          ></div>
+        </div>
+        <div
+          class="product-cart-modal-wrapper"
+          id="product-cart-modal"
+          data-type-id="50108"
+          data-product-type-name="1"
+          data-translations='{"cartTitle":"Shopping Cart","titleServices":"Recommended Customization Services for This Product","servicesDetailsLabel":"Details","labelBack":"Back to All Services","cartTop":"You added to cart","continueLabel":"Continue Shopping","licenseCaption":"License type","priceCaption":"Total","singlePriceCaption":"Subtotal","viewCartLabel":"Go To Cart","priceButtonLabel":"Checkout Now","freeLabel":"Free","feeCaption":"Handling fee","labelCusomersChoice":"Customers&#039; #1 choice","labelRecommended":"Recommended"}'
+          data-list-name="Demo"
+          data-types='{"HTML_ID":50108,"WORDPRESS_ID":50125,"JOOMLA_ID":50126,"OPENCART_ID":50122,"WOOCOMMERCE_ID":61529,"SHOPIFY_ID":67280,"LOGO_TEMPLATES_ID":50133,"LANDING_PAGE_ID":168633,"NEWSLETTER_ID":109856,"ADMIN_TEMPLATES_ID":207799,"BIGCOMMERCE_ID":845761,"PRESTASHOP_ID":50116,"MOTO_CMS3_ID":168158,"MOTOCMS_ECOMMERCE_ID":208727,"DRUPAL_ID":50127}'
+        ></div>
+      </header>
+      <section class="content">
+        <div class="frame-wrapper" id="frame-wrapper">
+          <iframe
+            class="frame"
+            src="https://g-source.xyz/templates/gravity/"
+            width="100%"
+            height="400px"
+            title="Preview Template"
+            sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-popups"
+          ></iframe>
+        </div>
+      </section>
     </div>
     <script type="application/ld+json">
-{"@context": "http://schema.org","@graph": [{"@context":"http://schema.org","@type":"WebPage","name":"JuHn's Space","url":null,"description":"JuHn's Space"}]}
-</script>
-    <script type="text/javascript">
-        window.__app__ = window.__app__ || {};
-        window.__app__ = { "language": "en", "apiLocale": "en", "analytics": { "pageType": "Demo" }, "js": { "cookieDomain": ".templatemonster.com", "liveDemoDomain": "\/\/demo.templatemonster.com\/", "fontPreviewDomain": "\/\/s3f.tmimgcdn.com\/", "domain": "https:\/\/www.templatemonster.com", "api": { "f1": "https:\/\/www.templatemonster.com\/f1\/api", "products": "https:\/\/api.templatemonster.com\/products", "pages": "https:\/\/api.templatemonster.com\/pages", "navigations": "https:\/\/api.templatemonster.com\/navigations", "properties": "https:\/\/api.templatemonster.com\/properties", "authors": "https:\/\/api.templatemonster.com\/authors", "currencies": "https:\/\/api.templatemonster.com\/currencies", "reviews": "https:\/\/api.templatemonster.com\/reviews", "collection": "https:\/\/api.templatemonster.com\/collection", "carts": "https:\/\/api.templatemonster.com\/carts", "users": "https:\/\/api.templatemonster.com\/users", "payment-clients": "https:\/\/api.templatemonster.com\/payment-clients", "promos": "https:\/\/api.templatemonster.com\/promos", "services": "https:\/\/api.templatemonster.com\/services", "licenses": "https:\/\/api.templatemonster.com\/licenses", "support": "https:\/\/api.templatemonster.com\/support", "orders": "https:\/\/api.templatemonster.com\/orders", "discounts": "https:\/\/api.templatemonster.com\/discounts", "mailer": "https:\/\/api.templatemonster.com\/mailer", "marketplace-services": "https:\/\/api.templatemonster.com\/marketplace-services", "consul": "https:\/\/api.templatemonster.com", "tickets": "https:\/\/api.templatemonster.com\/tickets", "locales": "https:\/\/api.templatemonster.com\/locales" }, "revive": { "url": "https:\/\/r5.templatemonster.com\/dl\/1asyncjs.php", "zoneId": 2, "hash": "5744eda1a89c46c055297f86d855c494" }, "recaptchaSiteKey": "6LeaeVAdAAAAALs6W5unPcr6EWXTc5ZYpy4Irks3", "centrifuge": "wss:\/\/ws1.templatemonster.com", "stripe": { "stripePublicKey": "pk_live_H5qyFec6DCp3zddA8UkTb5aE", "stripeId": "59d3a31deebec520e279c65e" }, "consulUrl": "http:\/\/api.templatemonster.com", "currency": { "code": "USD", "rate": 1 }, "abExperimentId": "1709_prod_addoff", "abExperimentInit": false } };
+      {
+        "@context": "http://schema.org",
+        "@graph": [
+          {
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "name": "JuHn's Space",
+            "url": null,
+            "description": "JuHn's Space"
+          }
+        ]
+      }
     </script>
-    <script src="//www.templatemonster.com/assets/js/commons-a6eacdce2af96cff47d4.js" async="async"></script>
-    <script src="//www.templatemonster.com/assets/js/demo-bbab3c94e6d4d5bdb446.js" async="async"></script>
-    <script>window.addEventListener('load', function () {
-            window.dataLayer = window.dataLayer || []; window.dataLayer.push({ "pageType": "Demo", "portalName": "All", "portalContent": "All", "categoryName": "Other" });
+    <script type="text/javascript">
+      window.__app__ = window.__app__ || {};
+      window.__app__ = {
+        language: "en",
+        apiLocale: "en",
+        analytics: { pageType: "Demo" },
+        js: {
+          cookieDomain: ".templatemonster.com",
+          liveDemoDomain: "\/\/demo.templatemonster.com\/",
+          fontPreviewDomain: "\/\/s3f.tmimgcdn.com\/",
+          domain: "https:\/\/www.templatemonster.com",
+          api: {
+            f1: "https:\/\/www.templatemonster.com\/f1\/api",
+            products: "https:\/\/api.templatemonster.com\/products",
+            pages: "https:\/\/api.templatemonster.com\/pages",
+            navigations: "https:\/\/api.templatemonster.com\/navigations",
+            properties: "https:\/\/api.templatemonster.com\/properties",
+            authors: "https:\/\/api.templatemonster.com\/authors",
+            currencies: "https:\/\/api.templatemonster.com\/currencies",
+            reviews: "https:\/\/api.templatemonster.com\/reviews",
+            collection: "https:\/\/api.templatemonster.com\/collection",
+            carts: "https:\/\/api.templatemonster.com\/carts",
+            users: "https:\/\/api.templatemonster.com\/users",
+            "payment-clients":
+              "https:\/\/api.templatemonster.com\/payment-clients",
+            promos: "https:\/\/api.templatemonster.com\/promos",
+            services: "https:\/\/api.templatemonster.com\/services",
+            licenses: "https:\/\/api.templatemonster.com\/licenses",
+            support: "https:\/\/api.templatemonster.com\/support",
+            orders: "https:\/\/api.templatemonster.com\/orders",
+            discounts: "https:\/\/api.templatemonster.com\/discounts",
+            mailer: "https:\/\/api.templatemonster.com\/mailer",
+            "marketplace-services":
+              "https:\/\/api.templatemonster.com\/marketplace-services",
+            consul: "https:\/\/api.templatemonster.com",
+            tickets: "https:\/\/api.templatemonster.com\/tickets",
+            locales: "https:\/\/api.templatemonster.com\/locales",
+          },
+          revive: {
+            url: "https:\/\/r5.templatemonster.com\/dl\/1asyncjs.php",
+            zoneId: 2,
+            hash: "5744eda1a89c46c055297f86d855c494",
+          },
+          recaptchaSiteKey: "6LeaeVAdAAAAALs6W5unPcr6EWXTc5ZYpy4Irks3",
+          centrifuge: "wss:\/\/ws1.templatemonster.com",
+          stripe: {
+            stripePublicKey: "pk_live_H5qyFec6DCp3zddA8UkTb5aE",
+            stripeId: "59d3a31deebec520e279c65e",
+          },
+          consulUrl: "http:\/\/api.templatemonster.com",
+          currency: { code: "USD", rate: 1 },
+          abExperimentId: "1709_prod_addoff",
+          abExperimentInit: false,
+        },
+      };
+    </script>
+    <script
+      src="//www.templatemonster.com/assets/js/commons-a6eacdce2af96cff47d4.js"
+      async="async"
+    ></script>
+    <script
+      src="//www.templatemonster.com/assets/js/demo-bbab3c94e6d4d5bdb446.js"
+      async="async"
+    ></script>
+    <script>
+      window.addEventListener("load", function () {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          pageType: "Demo",
+          portalName: "All",
+          portalContent: "All",
+          categoryName: "Other",
         });
-        window.addEventListener('load', function () {
-            window.dataLayer = window.dataLayer || []; window.dataLayer.push({ "ecommerce": null }); window.dataLayer.push({ "event": "view_item", "ecommerce": { "items": [{ "item_id": "195940", "item_name": "1", "affiliation": "GWorld", "discount": 0, "item_brand": "Website templates", "item_category": "Website", "item_category2": "in_one - true", "item_category3": "updated - false", "item_category4": "booster - 125", "item_variant": "premium + 46", "price": 0.41, "quantity": 1, "item_list_name": "", "index": 1 }] } }); window.dataLayer.push({ "event": "detailViewNew", "productDetailView": { "name": "Gravity - Multi-Purpose HTML Template", "id": "195940", "price": 0.41, "brand": "Website templates", "category": "Website", "variant": "premium + 46", "imageurl": "https:\/\/s.tmimgcdn.com\/scr\/800x500\/195900\/gravity-multi-purpose-html-template_195940-original.jpg", "similars": [{ "id": 364514, "url": "https:\/\/www.templatemonster.com\/website-templates\/technoit-it-solutions-amp-business-services-multipurpose-responsive-website-template-364514.html", "imageurl": "https:\/\/s.tmimgcdn.com\/scr\/800x500\/364500\/technoit--it-solutions-amp-business-services-multipurpose-responsive-website-template_364514-5-original.jpg", "name": "Technoit | IT Solutions &amp; Business Services Multipurpose Responsive Website Template" }, { "id": 346791, "url": "https:\/\/www.templatemonster.com\/website-templates\/lead-planner-business-coach-html5-website-template-346791.html", "imageurl": "https:\/\/s.tmimgcdn.com\/scr\/800x500\/346700\/lead-planner-business-coach-html5-website-template_346791-original.jpg", "name": "Lead Planner - Business Coach HTML5 Website Template" }, { "id": 500130, "url": "https:\/\/www.templatemonster.com\/website-templates\/lawify-law-firm-amp-legal-services-html-template-500130.html", "imageurl": "https:\/\/s.tmimgcdn.com\/scr\/800x500\/500100\/lawify-law-firm-amp-legal-services-html-template_500130-original.png", "name": "Lawify - Law Firm &amp; Legal Services HTML Template" }, { "id": 101273, "url": "https:\/\/www.templatemonster.com\/website-templates\/101273.html", "imageurl": "https:\/\/s.tmimgcdn.com\/scr\/800x500\/101200\/techno-best-it-solution-and-multi-purpose-bootstrap-html5-website-template-rtl_101273-9-original.jpg", "name": "Techno - Best IT Solution and Multi-Purpose Bootstrap  HTML5 Website Template + RTL" }], "deals": [{ "id": 539789, "url": "https:\/\/www.templatemonster.com\/website-templates\/consulnet-business-consulting-website-template-539789.html", "imageurl": "https:\/\/s.tmimgcdn.com\/scr\/800x500\/539700\/consulnet-business-consulting-website-template_539789-original.png", "name": "Consulnet \u2013 Business Consulting Website Template" }, { "id": 540497, "url": "https:\/\/www.templatemonster.com\/website-templates\/consulnet-corporate-business-consulting-website-template-540497.html", "imageurl": "https:\/\/s.tmimgcdn.com\/scr\/800x500\/540400\/consulnet-corporate-business-consulting-website-template_540497-original.png", "name": "Consulnet \u2013 Corporate Business Consulting Website Template" }] } });
-        });</script>
-    <script defer
-        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
-        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-        data-cf-beacon='{"rayId":"975025fdaebefcd8","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.8.0","token":"d60729d31c99463a932976f93a42a9c3"}'
-        crossorigin="anonymous"></script>
-</body>
-
+      });
+      window.addEventListener("load", function () {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ ecommerce: null });
+        window.dataLayer.push({
+          event: "view_item",
+          ecommerce: {
+            items: [
+              {
+                item_id: "195940",
+                item_name: "1",
+                affiliation: "GWorld",
+                discount: 0,
+                item_brand: "Website templates",
+                item_category: "Website",
+                item_category2: "in_one - true",
+                item_category3: "updated - false",
+                item_category4: "booster - 125",
+                item_variant: "premium + 46",
+                price: 0.41,
+                quantity: 1,
+                item_list_name: "",
+                index: 1,
+              },
+            ],
+          },
+        });
+        window.dataLayer.push({
+          event: "detailViewNew",
+          productDetailView: {
+            name: "Gravity - Multi-Purpose HTML Template",
+            id: "195940",
+            price: 0.41,
+            brand: "Website templates",
+            category: "Website",
+            variant: "premium + 46",
+            imageurl:
+              "https:\/\/s.tmimgcdn.com\/scr\/800x500\/195900\/gravity-multi-purpose-html-template_195940-original.jpg",
+            similars: [
+              {
+                id: 364514,
+                url: "https:\/\/www.templatemonster.com\/website-templates\/technoit-it-solutions-amp-business-services-multipurpose-responsive-website-template-364514.html",
+                imageurl:
+                  "https:\/\/s.tmimgcdn.com\/scr\/800x500\/364500\/technoit--it-solutions-amp-business-services-multipurpose-responsive-website-template_364514-5-original.jpg",
+                name: "Technoit | IT Solutions &amp; Business Services Multipurpose Responsive Website Template",
+              },
+              {
+                id: 346791,
+                url: "https:\/\/www.templatemonster.com\/website-templates\/lead-planner-business-coach-html5-website-template-346791.html",
+                imageurl:
+                  "https:\/\/s.tmimgcdn.com\/scr\/800x500\/346700\/lead-planner-business-coach-html5-website-template_346791-original.jpg",
+                name: "Lead Planner - Business Coach HTML5 Website Template",
+              },
+              {
+                id: 500130,
+                url: "https:\/\/www.templatemonster.com\/website-templates\/lawify-law-firm-amp-legal-services-html-template-500130.html",
+                imageurl:
+                  "https:\/\/s.tmimgcdn.com\/scr\/800x500\/500100\/lawify-law-firm-amp-legal-services-html-template_500130-original.png",
+                name: "Lawify - Law Firm &amp; Legal Services HTML Template",
+              },
+              {
+                id: 101273,
+                url: "https:\/\/www.templatemonster.com\/website-templates\/101273.html",
+                imageurl:
+                  "https:\/\/s.tmimgcdn.com\/scr\/800x500\/101200\/techno-best-it-solution-and-multi-purpose-bootstrap-html5-website-template-rtl_101273-9-original.jpg",
+                name: "Techno - Best IT Solution and Multi-Purpose Bootstrap  HTML5 Website Template + RTL",
+              },
+            ],
+            deals: [
+              {
+                id: 539789,
+                url: "https:\/\/www.templatemonster.com\/website-templates\/consulnet-business-consulting-website-template-539789.html",
+                imageurl:
+                  "https:\/\/s.tmimgcdn.com\/scr\/800x500\/539700\/consulnet-business-consulting-website-template_539789-original.png",
+                name: "Consulnet \u2013 Business Consulting Website Template",
+              },
+              {
+                id: 540497,
+                url: "https:\/\/www.templatemonster.com\/website-templates\/consulnet-corporate-business-consulting-website-template-540497.html",
+                imageurl:
+                  "https:\/\/s.tmimgcdn.com\/scr\/800x500\/540400\/consulnet-corporate-business-consulting-website-template_540497-original.png",
+                name: "Consulnet \u2013 Corporate Business Consulting Website Template",
+              },
+            ],
+          },
+        });
+      });
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      data-cf-beacon='{"rayId":"975025fdaebefcd8","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.8.0","token":"d60729d31c99463a932976f93a42a9c3"}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
