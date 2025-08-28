@@ -1,56 +1,58 @@
 /* 기본 HTML/레이아웃 스타일 */
 html {
-    box-sizing: border-box;
-    -webkit-text-size-adjust: 100%;
-    line-height: 1.15;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
 }
 
-html *, html :after, html :before {
-    box-sizing: inherit;
+html *,
+html :after,
+html :before {
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    font-family: system-ui;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #243238;
-    font-size: 16px;
-    line-height: 1.5;
+  margin: 0;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #243238;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 a {
-    text-decoration: none;
-    background-color: initial;
-    touch-action: manipulation;
+  text-decoration: none;
+  background-color: initial;
+  touch-action: manipulation;
 }
 
 img {
-    border-style: none;
-    vertical-align: middle;
+  border-style: none;
+  vertical-align: middle;
 }
 
 ::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit;
+  -webkit-appearance: button;
+  font: inherit;
 }
 
 /* 컨텐츠 레이아웃 */
 .content {
-    display: flex;
+  display: flex;
 }
 
 .inline-svg {
-    opacity: 0; /* 필요 없다면 제거 가능 */
+  opacity: 0; /* 필요 없다면 제거 가능 */
 }
 
 /* iframe 레이아웃 */
 .frame-wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .frame {
-    border: none;
-    display: block;
-    min-height: calc(100vh - 60px);
+  border: none;
+  display: block;
+  min-height: calc(100vh - 60px);
 }
